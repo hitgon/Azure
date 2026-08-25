@@ -1,0 +1,22 @@
+
++++++++++++++++++
+Availability Set
++++++++++++++++++
+The Availability Set feature in Azure Virtual Machines ensures that updates are staggered across VMs based on their update domains and fault domains. 
+This mechanism is designed to maintain high availability during planned maintenance or unexpected failures.
+
++++++++++++++++++
+Update Domains
++++++++++++++++++
+Update Domains are logical groupings that define which VMs can be updated or rebooted simultaneously. 
+During maintenance, Azure updates one update domain at a time, ensuring that other update domains remain operational. 
+For example, if you have multiple VMs in an availability set, they are distributed across up to 20 update domains, and only one update domain is updated at a time.
+
++++++++++++++
+Fault Domain
++++++++++++++
+Fault Domains provide physical isolation by grouping VMs that share the same power source and network switch. 
+This ensures that a failure in one fault domain does not impact VMs in other fault domains.
+
+>>>>By combining update domains and fault domains, Azure minimizes downtime and ensures that applications remain available during maintenance or hardware failures.
+
