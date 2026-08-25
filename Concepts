@@ -20,3 +20,14 @@ This ensures that a failure in one fault domain does not impact VMs in other fau
 
 >>>>By combining update domains and fault domains, Azure minimizes downtime and ensures that applications remain available during maintenance or hardware failures.
 
+
+++++++++++++
+Scale Sets
+++++++++++++
+Scale Sets, on the other hand, are designed for scalability and automatic management of VM instances. 
+They allow you to create and manage a group of load-balanced VMs that can automatically increase or decrease in response to demand or a defined schedule.
+
+Automatic Scaling: Scale sets can automatically adjust the number of VM instances based on usage metrics or a predefined schedule.
+Central Management: VM instances in a scale set can be centrally managed, configured, and updated.
+Scale sets provide high availability by distributing VM instances across multiple fault domains and update domains, similar to availability sets. 
+However, they also offer the flexibility to scale out or in based on demand, making them suitable for applications with varying workloads.
