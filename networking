@@ -1,0 +1,23 @@
+Azure networking services that help you connect, secure, and route traffic between resources. 
+1. Communication within Azure, 
+2. Between Azure and on-premises environments, 
+3. Across internet-connected clients.
+
+
+Describe Azure virtual networking, including subnets and endpoints
+
+
+
+Describe connectivity options with Azure VPN Gateway
+
+
+
+Describe when to use Azure ExpressRoute
+
+
+
+Describe Azure DNS capabilities
+
+
+
+Describe basic network access controls for Azure resources
