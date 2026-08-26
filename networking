@@ -3,6 +3,53 @@ Azure networking services that help you connect, secure, and route traffic betwe
 2. Between Azure and on-premises environments, 
 3. Across internet-connected clients.
 
+#Isolation and segmentation
+--> Azure VNet 
+
+#Azure resources can communicate securely with each other in one of two ways:
+1. Virtual networks can connect not only VMs but other Azure resources, such as the App Service Environment for Power Apps, Azure Kubernetes Service, and Azure virtual machine scale sets.
+2. Service endpoints can connect to other Azure resource types, such as Azure SQL databases and storage accounts. 
+   This approach lets you link multiple Azure resources to virtual networks to improve security and provide optimal routing between resources.
+
+#Communicate with on-premises resources
+
+<1> Point-to-site virtual private network connections are from a computer outside your environment back into your private network. 
+    In this case, the client computer initiates an encrypted VPN connection to connect to the Azure virtual network.
+<2> Site-to-site virtual private networks link your on-premises VPN device or gateway to the Azure VPN gateway in a virtual network. 
+    In effect, the devices in Azure can appear as being on the local network. The connection is encrypted and works over the internet.
+<3> Azure ExpressRoute provides a dedicated private connectivity to Azure that doesn't travel over the internet. 
+    ExpressRoute is useful for environments where you need greater bandwidth and even higher levels of security.
+
+#Route network traffic 
+1. Route tables let you define rules about how traffic should be directed. You can create custom route tables that control how packets are routed between subnets.
+2. Border Gateway Protocol (BGP) works with Azure VPN gateways, Azure Route Server, or Azure ExpressRoute to propagate on-premises BGP routes to Azure virtual networks.
+3. User-defined routes (UDR) let you control the routing tables between subnets within a virtual network or between virtual networks, giving you greater control over network traffic flow.
+
+#Filter network traffic
+Azure virtual networks let you filter traffic between subnets by using the following approaches:
+
+1. Network security groups are Azure resources that can contain multiple inbound and outbound security rules. 
+   You can define these rules to allow or block traffic, based on factors such as source and destination IP address, port, and protocol.
+2. Network virtual appliances are specialized VMs that can be compared to a hardened network appliance. 
+   A network virtual appliance carries out a particular network function, such as running a firewall or performing wide area network (WAN) optimization.
+
+#Virtual network peering
+Peering allows two virtual networks to connect directly to each other. Network traffic between peered networks is private, and travels on the Microsoft backbone network, 
+never entering the public internet. Peering enables resources in each virtual network to communicate with each other. These virtual networks can be in separate regions, 
+which lets you create a global interconnected network through Azure.
+
+#VPN gateways
+A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances are deployed in a dedicated subnet of the virtual network and enable the following connectivity:
+Connect on-premises datacenters to virtual networks through a site-to-site connection.
+Connect individual devices to virtual networks through a point-to-site connection.
+Connect virtual networks to other virtual networks through a network-to-network connection. 
+You can deploy only one VPN gateway in each virtual network.
+
+Use a route-based VPN gateway if you need any of the following types of connectivity:
+$Connections between virtual networks
+$Point-to-site connections
+$Multisite connections
+$Coexistence with an Azure ExpressRoute gateway
 
 Describe Azure virtual networking, including subnets and endpoints
 
@@ -13,7 +60,12 @@ Describe connectivity options with Azure VPN Gateway
 
 
 Describe when to use Azure ExpressRoute
+-->At a high level, choose ExpressRoute when:
 
+-> You need private, consistent connectivity between on-premises networks and Azure.
+-> Your team has strict compliance or data-transfer requirements.
+-> You need predictable latency and high-throughput network performance.
+-> You want to avoid sending critical traffic over the public internet.
 
 
 Describe Azure DNS capabilities
