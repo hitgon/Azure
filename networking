@@ -5,6 +5,9 @@ Azure networking services that help you connect, secure, and route traffic betwe
 
 #Isolation and segmentation
 --> Azure VNet 
+--> Subnet
+ The smallest supported IPv4 subnet is /29, and the largest is /2 (using CIDR subnet definitions). 
+ IPv6 subnets must be exactly /64 in size. When planning to implement subnets, consider:
 
 #Azure resources can communicate securely with each other in one of two ways:
 1. Virtual networks can connect not only VMs but other Azure resources, such as the App Service Environment for Power Apps, Azure Kubernetes Service, and Azure virtual machine scale sets.
