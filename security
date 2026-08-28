@@ -1,0 +1,26 @@
++++++++++++++++++++++++++++++++++++++++++++++++
+Azure directory services - Microsoft Entra ID
++++++++++++++++++++++++++++++++++++++++++++++++
+Microsoft Entra ID is Microsoft's cloud-based identity and access management service. It lets you sign in and access both Microsoft cloud applications and cloud applications that you develop.
+On-premises Active Directory doesn't monitor sign-in behavior. Once connected to Microsoft Entra ID, Microsoft can detect suspicious sign-in attempts at no extra cost — for example, 
+sign-ins from unexpected locations or unknown devices.
+
+Microsoft Entra ID is for: IT administrators, App developers, Users, Online service subscribers
+
+Microsoft Entra ID provides services such as:
+
+1. Authentication — Verifies identity before granting access. Includes self-service password reset, multifactor authentication, banned password lists, and smart lockout.
+
+2. Single sign-on (SSO) — Lets one identity access multiple applications. SSO benefits and behavior are covered in the authentication methods unit.
+
+3. Application management — Manages cloud and on-premises apps through features like Application Proxy, SaaS app integration, and the My Apps portal.
+
+4. Device management — Supports device registration and management through tools like Microsoft Intune. Enables device-based Conditional Access policies that restrict access to known devices.
+
+
+Note:
+Microsoft Intune is a cloud-based endpoint management service that secures and manages your organization's devices and apps. 
+Use Intune to enroll, configure, secure, and update devices, deploy and protect apps, and control which users and devices can access organization resources.
+Supported platforms include Android, iOS/iPadOS, Linux, macOS, tvOS, visionOS, and Windows. The service runs entirely in the cloud, with no on-premises infrastructure required, 
+and supports the Zero Trust security model.
+
