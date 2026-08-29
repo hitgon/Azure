@@ -55,6 +55,15 @@ Send push notifications.
 Execute custom back-end logic in C# or Node.js.
 On the mobile app side, there's SDK support for native iOS and Android, Xamarin, and React Native apps.
 
++++++++++
+Azure Arc
++++++++++
+Is a bridge that extends the Azure platform into your environments.
+Azure Arc is a bridge that extends the Azure platform to help you build applications and services with the flexibility to run across datacenters, at the edge, and in multicloud environments.
+It provides a centralized, unified way to manage your entire environment by projecting your existing on-premises, edge, and multicloud resources into Azure Resource Manager so you have a 
+single control plane to manage, govern, and secure your VMs, databases, Kubernetes clusters, and other cloud resources. Azure Arc can also help you deploy both management and PaaS services 
+into your environments, like Microsoft Defender for Cloud or Azure Kubernetes Service.
+
 
 
   
