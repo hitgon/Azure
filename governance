@@ -138,6 +138,9 @@ Think of it as a personalized best-practices guide built into the Azure portal. 
 Azure Service Health
 +++++++++++++++++++++
 Azure Service Health helps you stay informed about the health of Azure itself and the specific resources you run. It combines three views that narrow in scope from global down to individual resources.
+You can drill down to the affected services, regions, and details to show how an event will affect you and what you must do. 
+Most of these events occur without any impact to you and will not be shown. In a rare case that a reboot is required,
+Service Health allows you to choose when to perform the maintenance to minimize the downtime
 
 +++++++++++++
 Azure Monitor
