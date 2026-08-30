@@ -87,12 +87,92 @@ In fact, the Enable Monitoring in Azure Security Center initiative contains over
 Resource locks
 ++++++++++++++
 A resource lock prevents resources from being accidentally deleted or changed.
-
+To modify a locked resource, you must first remove the lock. After you remove the lock, you can apply any action you have permissions to perform. 
+Resource locks apply regardless of RBAC permissions. Even if you're an owner of the resource, you must still remove the lock before you can perform the blocked activity.
 
 
 ++++++++++++++++++++
 Service Trust portal
 ++++++++++++++++++++
+Covers the Certifications, Regulations and Standards
+Microsoft cloud services protect your data, and how you can manage cloud data security and compliance for your organization.
+
++++++++++
+Azure Arc
++++++++++
+Azure Arc works with Azure Resource Manager to extend your Azure compliance and monitoring to hybrid and multicloud configurations. 
+Azure Arc simplifies governance and management by delivering a consistent multicloud and on-premises management platform.
+
+Imagine your organization runs workloads in Azure, an on-premises datacenter, and another public cloud. 
+With Azure Arc, operations teams can apply consistent governance, policy, and inventory tracking across these environments from Azure, 
+instead of managing each environment with disconnected tools.
+
+Currently, Azure Arc allows you to manage the following resource types hosted outside of Azure:
+
+Servers
+Kubernetes clusters
+Azure data services
+SQL Server
+Virtual machines (preview)
+
+++++++++++++++++++++++
+Azure Resource Manager
+++++++++++++++++++++++
+Azure Resource Manager is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure account. 
+Anytime you do anything with your Azure resources, Azure Resource Manager is involved.
+
+When a user sends a request from any of the Azure tools, APIs, or SDKs, Azure Resource Manager receives the request. Azure Resource Manager authenticates and authorizes the request. 
+Then, Azure Resource Manager sends the request to the Azure service, which takes the requested action. You see consistent results and capabilities in all the different tools because 
+all requests are handled through the same API.
+
+Note:
+Bicep is a declarative language for deploying Azure resources through ARM. Compared to JSON ARM templates, Bicep is generally simpler and more concise.
+
++++++++++++++
+Azure Advisor
++++++++++++++
+Evaluates your Azure resources and makes recommendations to help you improve reliability, security, performance, and cost efficiency. 
+Think of it as a personalized best-practices guide built into the Azure portal. Each recommendation includes a suggested action you can take right away, postpone, or dismiss.
+
++++++++++++++++++++++
+Azure Service Health
++++++++++++++++++++++
+Azure Service Health helps you stay informed about the health of Azure itself and the specific resources you run. It combines three views that narrow in scope from global down to individual resources.
+
++++++++++++++
+Azure Monitor
++++++++++++++
+Azure Monitor is a platform for collecting, analyzing, and acting on data from your Azure resources and applications. It works with Azure, on-premises, and multicloud environments.
+Azure Monitor gathers logs and metrics from your applications, operating systems, and network layers, stores that data centrally, and makes it available through dashboards, queries, and alerts.
+
+++++++++++++++++++++
+Azure Log Analytics
+++++++++++++++++++++
+Log Analytics is the tool in the Azure portal where you write and run queries against the data Azure Monitor collects. You can do simple filtering, like finding all errors in the last hour, 
+or run advanced analytics to visualize trends over time.
+
+++++++++
+Alerts
+++++++++
+Alerts notify you when Azure Monitor detects that a condition you defined has been met. You create an alert rule that specifies the condition, and an action group that controls who gets notified and what happens next.
+
+Alerts can be metric-based or log-based. For example, a metric alert can send you an email when a VM's CPU stays above 80%, while a log alert can watch for a specific error pattern across multiple resources. Action groups are reusable across Azure Monitor, Service Health, and Azure Advisor.
+
+++++++++++++++++++++
+Application Insights
+++++++++++++++++++++
+Application Insights is an Azure Monitor feature that monitors the performance and usage of your web applications, whether they run in Azure, on-premises, or in another cloud.
+You can set up Application Insights by adding an SDK to your application code or by enabling the Application Insights agent without code changes.
+
+Application Insights can monitor:
+
+1. Request rates, response times, and failure rates
+2. Dependency calls and their performance
+3. Page load times, user counts, and session trends
+4. Server performance counters such as CPU, memory, and network usage
+5. You can also set up availability tests that send synthetic requests to your application so you know it's responding, even during low-traffic periods.
+
+
 
 
 
