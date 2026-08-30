@@ -1,0 +1,56 @@
+++++++++++++++++++++++++++++++++++++++++++++++++
+Describe factors that can affect costs in Azure
+++++++++++++++++++++++++++++++++++++++++++++++++
+With Azure, you pay for IT resources as you use them instead of purchasing and maintaining your own infrastructure. Whether it's compute, storage, or networking, you rent what you need and release it when you're done. This consumption-based approach means your costs scale with your actual usage.
+
+Many factors affect how much you pay. Some of the factors that affect cost are:
+
+1. Resource type
+2. Consumption ( PAUG, Commit for discounts )
+3. Maintenance ( Unused resources still cost the money)
+4. Geography
+5. Subscription type
+6. Azure Marketplace
+
+
++++++++++++++++
+Cost Management
++++++++++++++++
+Provides the ability to quickly check Azure resource costs, create alerts based on resource spend, and create budgets that can be used to automate management of resources.
+
+
+++++++
+tags
+++++++
+A practical starter tag set for many teams is Environment, Owner, CostCenter, and Workload.
+This set supports common day-to-day tasks such as filtering costs, finding service owners, and scoping automation.
+
++++++++++++++++++++++++++
+cost optimization options
++++++++++++++++++++++++++
+Use this quick decision pattern:
+
+Choose Reservations for predictable, long-running workloads with stable resource needs.
+Choose Azure savings plan for compute when usage is steady but you need more flexibility across compute services.
+Choose Spot pricing for fault-tolerant or interruptible workloads where lowest cost is the top priority.
+
++++++++++++++++++
+Microsoft Purview
++++++++++++++++++
+
+
+++++++++++++
+Azure Policy
+++++++++++++
+
+++++++++++++++
+Resource locks
+++++++++++++++
+
+
+++++++++++++++++++++
+Service Trust portal
+++++++++++++++++++++
+
+
+
