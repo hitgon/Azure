@@ -37,15 +37,57 @@ Choose Spot pricing for fault-tolerant or interruptible workloads where lowest c
 +++++++++++++++++
 Microsoft Purview
 +++++++++++++++++
+Microsoft Purview is a family of data governance, risk, and compliance solutions that helps you get a single, unified view into your data. 
+Microsoft Purview brings insights about your on-premises, multicloud, and software-as-a-service data together.
+With Microsoft Purview, you can stay up-to-date on your data landscape thanks to:
+1. Automated data discovery
+2. Sensitive data classification
+3. End-to-end data lineage
+Two main solution areas comprise Microsoft Purview: risk and compliance and unified data governance.
 
+Microsoft 365 features as a core component of the Microsoft Purview risk and compliance solutions. 
+Microsoft Teams, OneDrive, and Exchange are just some of the Microsoft 365 services that Microsoft Purview uses to help manage and monitor your data. 
+Microsoft Purview, by managing and monitoring your data, helps your team:
+1. Protect sensitive data across clouds, apps, and devices.
+2. Identify data risks and manage regulatory compliance requirements.
+3. Get started with regulatory compliance.
+
+Microsoft Purview has robust, unified data governance solutions that help manage your on-premises, multicloud, and software as a service data. 
+Microsoft Purview’s robust data governance capabilities enable you to manage your data stored in Azure, SQL and Hive databases, locally, and even in other clouds like Amazon S3.
+
+Microsoft Purview’s unified data governance helps your team:
+
+1. Create an up-to-date map of your entire data estate that includes data classification and end-to-end lineage.
+2. Identify where sensitive data is stored in your estate.
+3. Create a secure environment for data consumers to find valuable data.
+4. Generate insights about how your data is stored and used.
+5. Manage access to the data in your estate securely and at scale.
 
 ++++++++++++
 Azure Policy
 ++++++++++++
+How do you ensure that your resources stay compliant? Can you be alerted if a resource's configuration has changed?
+
+Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources.
+These policies enforce different rules across your resource configurations so that those configurations stay compliant with your standards.
+
+An Azure Policy initiative is a way of grouping related policies together. The initiative definition contains all of the policy definitions to help track your compliance state for a larger goal.
+
+For example, Azure Policy includes an initiative named Enable Monitoring in Azure Security Center. Its goal is to monitor all available security recommendations for all Azure resource types in Azure Security Center.
+
+Under this initiative, the following policy definitions are included:
+
+1. Monitor unencrypted SQL Database in Security Center This policy monitors for unencrypted SQL databases and servers.
+2. Monitor OS vulnerabilities in Security Center This policy monitors servers that don't satisfy the configured OS vulnerability baseline.
+3. Monitor missing Endpoint Protection in Security Center This policy monitors for servers that don't have an installed endpoint protection agent.
+In fact, the Enable Monitoring in Azure Security Center initiative contains over 100 separate policy definitions.
+
 
 ++++++++++++++
 Resource locks
 ++++++++++++++
+A resource lock prevents resources from being accidentally deleted or changed.
+
 
 
 ++++++++++++++++++++
